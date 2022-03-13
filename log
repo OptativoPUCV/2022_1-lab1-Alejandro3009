@@ -157,3 +157,20 @@ Sun Mar 13 20:40:36 UTC 2022:
  tests:  1|6
 total_score: 10/70
 efe9828
+Sun Mar 13 20:42:56 UTC 2022: 
+ exercises.c | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:42:7: error: unused variable ‘resto’ [-Werror=unused-variable]
+   int resto;
+       ^~~~~
+exercises.c:41:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   int i;
+       ^
+exercises.c:40:7: error: unused variable ‘total’ [-Werror=unused-variable]
+   int total;
+       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8c3e259
