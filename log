@@ -180,3 +180,14 @@ Sun Mar 13 20:43:08 UTC 2022:
  tests:  1|6
 total_score: 10/70
 3c515c8
+Sun Mar 13 20:43:35 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:8: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+   suma = sumaN((a+(n-m)), n);
+        ^
+cc1: all warnings being treated as errors
+Compilation failed
+cef8526
