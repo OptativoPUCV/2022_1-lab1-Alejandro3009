@@ -60,12 +60,12 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   
   for (i = 0; i<30; i++)
   {
-    scanf("%c", a[i]);
+    scanf("%c", nombre[i]);
   }
 
   for (i = 0; i<11; i++)
   {
-    scanf("%c", a[i]);
+    scanf("%c", rut[i]);
   }
 
   scanf("%i", &edad);

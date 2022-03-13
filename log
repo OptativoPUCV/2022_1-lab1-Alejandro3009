@@ -84,3 +84,17 @@ exercises.c:63:17: error: ‘a’ undeclared (first use in this function)
 exercises.c:63:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 de62d23
+Sun Mar 13 19:06:20 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:13: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Werror=format=]
+     scanf("%c", nombre[i]);
+            ~^   ~~~~~~~~~
+exercises.c:68:13: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Werror=format=]
+     scanf("%c", rut[i]);
+            ~^   ~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cb4991c
