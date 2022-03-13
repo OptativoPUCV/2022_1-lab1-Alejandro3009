@@ -56,7 +56,18 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+  for (i = 0; i<30; i++)
+  {
+    scanf("%c", a[i]);
+  }
+
+  for (i = 0; i<11; i++)
+  {
+    scanf("%c", a[i]);
+  }
+
+  scanf("%i", $edad);
+  return NULL;
 }
 
 /*
