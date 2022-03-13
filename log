@@ -174,3 +174,9 @@ exercises.c:40:7: error: unused variable ‘total’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8c3e259
+Sun Mar 13 20:43:08 UTC 2022: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  1|6
+total_score: 10/70
+3c515c8
