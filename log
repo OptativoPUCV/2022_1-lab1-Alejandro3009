@@ -130,3 +130,14 @@ exercises.c:68:13: error: format ‘%c’ expects argument of type ‘char *’,
 cc1: all warnings being treated as errors
 Compilation failed
 d1dd2c9
+Sun Mar 13 20:35:46 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:7: error: variable ‘total’ set but not used [-Werror=unused-but-set-variable]
+   int total;
+       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+78d90b2
