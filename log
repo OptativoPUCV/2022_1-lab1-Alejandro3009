@@ -73,3 +73,14 @@ exercises.c:61:17: error: ‘a’ undeclared (first use in this function)
                  ^
 Compilation failed
 c8d5355
+Sun Mar 13 19:05:52 UTC 2022: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:17: error: ‘a’ undeclared (first use in this function)
+     scanf("%c", a[i]);
+                 ^
+exercises.c:63:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+de62d23
