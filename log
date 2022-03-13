@@ -59,3 +59,17 @@ exercises.c:69:15: error: ‘$edad’ undeclared (first use in this function); d
                edad
 Compilation failed
 99a2482
+Sun Mar 13 19:05:32 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:59:8: error: ‘i’ undeclared (first use in this function)
+   for (i = 0; i<30; i++)
+        ^
+exercises.c:59:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:61:17: error: ‘a’ undeclared (first use in this function)
+     scanf("%c", a[i]);
+                 ^
+Compilation failed
+c8d5355
