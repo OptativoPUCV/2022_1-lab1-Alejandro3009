@@ -282,3 +282,14 @@ exercises.c:90:24: error: ‘arreglo’ is used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 1fff9bd
+Mon Mar 14 01:39:14 UTC 2022: 
+ exercises.c | 42 +++++++++++++++++++-----------------------
+ 1 file changed, 19 insertions(+), 23 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:8: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+   suma = sumaN((a+m),n);
+        ^
+cc1: all warnings being treated as errors
+Compilation failed
+33d2940
