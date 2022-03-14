@@ -76,10 +76,10 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector* chapalele = (Vector*) malloc (sizeof(Vector));
-  chapalele->capacidad = n;
-  chapalele->datos = (int *) calloc (chapalele->capacidad,sizeof(int));
-  return chapalele;
+  Vector* arreglo = (Vector*) malloc (sizeof(Vector));
+  arreglo->capacidad = n;
+  arreglo->datos = (int *) calloc (arreglo->capacidad,sizeof(int));
+  return arreglo;
 }
 
 /*
@@ -106,10 +106,11 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  int capacidad = a->capacidad;
+  int max = a->capacidad;
   int i;
 
-  for (i = 0; i < capacidad; i++){
+  for (i = 0; i < max; i++)
+  {
     c->datos[i]=(a->datos[i]+b->datos[i]);
   }
 }
