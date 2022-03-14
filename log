@@ -341,3 +341,9 @@ exercises.c:60:17: error: invalid type argument of ‘->’ (have ‘Persona {ak
                  ^~
 Compilation failed
 4e703e1
+Mon Mar 14 01:53:43 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  8|0
+total_score: 70/70
+0ac4b81
