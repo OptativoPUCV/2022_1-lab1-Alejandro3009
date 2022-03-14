@@ -209,3 +209,36 @@ Sun Mar 13 20:44:47 UTC 2022:
  tests:  1|6
 total_score: 10/70
 444cb2f
+Mon Mar 14 01:25:35 UTC 2022: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   vector *arreglo;
+   ^~~~~~
+   Vector
+exercises.c:90:15: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   *arreglo = (vector *) calloc (n, sizeof(vector));
+               ^~~~~~
+               Vector
+exercises.c:90:15: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:90:23: error: expected expression before ‘)’ token
+   *arreglo = (vector *) calloc (n, sizeof(vector));
+                       ^
+exercises.c:91:15: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+   if(*arreglo = NULL)return EXIT_ERROR;
+               ^
+exercises.c:91:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   if(*arreglo = NULL)return EXIT_ERROR;
+      ^
+exercises.c:91:29: error: ‘EXIT_ERROR’ undeclared (first use in this function); did you mean ‘EXIT_FAILURE’?
+   if(*arreglo = NULL)return EXIT_ERROR;
+                             ^~~~~~~~~~
+                             EXIT_FAILURE
+exercises.c:92:11: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+    return arreglo;
+           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+84f6719
