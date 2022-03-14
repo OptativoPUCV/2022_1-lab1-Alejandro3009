@@ -260,3 +260,25 @@ exercises.c:91:29: error: ‘EXIT_ERROR’ undeclared (first use in this functio
 exercises.c:91:29: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8fa5454
+Mon Mar 14 01:30:59 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:32: error: passing argument 1 of ‘calloc’ makes integer from pointer without a cast [-Werror=int-conversion]
+   arreglo = (Vector *) calloc (arreglo, n * sizeof(Vector));
+                                ^~~~~~~
+In file included from test.c:2:0:
+/usr/include/stdlib.h:541:14: note: expected ‘size_t {aka long unsigned int}’ but argument is of type ‘Vector * {aka struct <anonymous> *}’
+ extern void *calloc (size_t __nmemb, size_t __size)
+              ^~~~~~
+In file included from test.c:5:0:
+exercises.c:91:29: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   if(arreglo == NULL)return EXIT_FAILURE;
+                             ^~~~~~~~~~~~
+exercises.c:90:24: error: ‘arreglo’ is used uninitialized in this function [-Werror=uninitialized]
+   arreglo = (Vector *) calloc (arreglo, n * sizeof(Vector));
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1fff9bd
